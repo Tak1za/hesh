@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import { Row, Col } from "react-bootstrap";
 
 function App() {
+  let data = {
+    test: "test test test",
+    test2: "test2 test2 test2",
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="app" className="App">
+      <div className="main-container">
+        <Row>
+          <Col className="main-columns"></Col>
+          <Col xs={6} className="main-columns"></Col>
+          <Col className="main-columns response-area">
+            <pre>{JSON.stringify(data, null, 2)}</pre>
+          </Col>
+        </Row>
+      </div>
     </div>
   );
 }
