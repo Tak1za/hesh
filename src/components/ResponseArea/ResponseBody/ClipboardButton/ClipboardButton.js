@@ -3,7 +3,7 @@ import "./ClipboardButton.scss";
 
 
 function copyToClipboard() {
-	const copyText = document.getElementById("response").textContent;
+	const copyText = document.getElementById("json-response").textContent;
 	navigator.clipboard.writeText(copyText);
 }
 

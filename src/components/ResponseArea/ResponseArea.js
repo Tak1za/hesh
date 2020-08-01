@@ -1,26 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ResponseArea.scss";
-import ClipboardButton from '../ClipboardButton/ClipboardButton';
+import ResponseBody from "./ResponseBody/ResponseBody";
+import ResponseMessage from "./ResponseMessage/ResponseMessage";
 
 const ResponseArea = (props) => {
-	let data = {
-		test: "test test test",
-		test2: "test2 test2 test2",
-	};
-	const [showClipboard, setShowClipboard] = useState(false);
-	return (
-		<div className="response-area">
-			<div className="response-code">200 OK</div>
-			<div
-				className="json-response"
-				onMouseEnter={() => setShowClipboard(true)}
-				onMouseLeave={() => setShowClipboard(false)}
-			>
-				<ClipboardButton show={showClipboard} />
-				<pre id="response">{JSON.stringify(data, null, 2)}</pre>
-			</div>
-		</div>
-	);
+  return (
+    <div className="response-area">
+      <ResponseMessage />
+			<ResponseBody />
+    </div>
+  );
 };
 
 export default ResponseArea;

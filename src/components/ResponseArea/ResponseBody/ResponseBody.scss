@@ -1,0 +1,35 @@
+.response {
+  padding: 10px 10px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: grey;
+  border-width: 1px;
+
+  pre {
+    color: white;
+    font-size: small;
+    margin-bottom: 0px;
+  }
+
+  ::-webkit-scrollbar {
+    background: grey;
+    border-radius: 20px;
+    height: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: grey;
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: yellowgreen;
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: greenyellow;
+    border-radius: 20px;
+  }
+}
+
