@@ -1,5 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
+import "./RequestMethods.scss";
 
 const RequestMethods = () => {
   let requestType = ["GET", "PUT", "POST", "DELETE"];

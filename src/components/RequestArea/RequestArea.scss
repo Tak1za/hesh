@@ -1,26 +1,3 @@
 .request-area{
 	padding: 10px 0px;
-
-	.request-methods {
-		font-size: 15px;
-	}
-
-	.request-url {
-		background-color: #282c34;
-		color: white;
-		border-style: solid;
-		border-color: grey;
-		border-width: 2px;
-		border-radius: 20px;
-	}
-
-	.request-url:hover{
-		border-color: white;
-	}
-
-	.request-url:focus{
-		border-color: white;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-	}
 }

@@ -5,10 +5,7 @@ import "./RequestUrl.scss";
 const RequestUrl = () => {
   return (
     <Form.Group as={Row}>
-      <Form.Label column sm="1">
-        URL
-      </Form.Label>
-      <Col sm="11">
+      <Col sm="12">
         <Form.Control
           type="text"
           placeholder="Enter URL here..."
