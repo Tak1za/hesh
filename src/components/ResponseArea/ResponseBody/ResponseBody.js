@@ -1,12 +1,12 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./ResponseBody.scss";
 import ClipboardButton from "./ClipboardButton/ClipboardButton";
 
-const ResponseBody = () => {
-  let data = {
-    test: "test test test",
-    test2: "test2 test2 test2",
-  };
+const ResponseBody = (props) => {
+  // let data = {
+  //   test: "test test test",
+  //   test2: "test2 test2 test2",
+  // };
   const [showClipboard, setShowClipboard] = useState(false);
   return (
     <div
@@ -15,7 +15,7 @@ const ResponseBody = () => {
       onMouseLeave={() => setShowClipboard(false)}
     >
       <ClipboardButton show={showClipboard} />
-      <pre id="json-response">{JSON.stringify(data, null, 2)}</pre>
+      <pre id="json-response">{JSON.stringify(props.data, null, 2)}</pre>
     </div>
   );
 };
