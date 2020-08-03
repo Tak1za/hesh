@@ -14,7 +14,7 @@ const RequestUrl = (props) => {
           value={props.url}
         />
       </Col>
-      <Col sm="3">
+      <Col sm="3" className="send-button-container">
         <Button
           variant="outline-primary"
           className="request-button"

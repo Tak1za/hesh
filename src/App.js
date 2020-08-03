@@ -12,7 +12,7 @@ function App() {
       <div className="main-container">
         <Row>
           <Col className="main-columns"></Col>
-          <Col xs={6} className="main-columns">
+          <Col xs={4} className="main-columns">
             <RequestArea
               setResponse={setJsonResponse}
               setMessage={setResponseMessage}
