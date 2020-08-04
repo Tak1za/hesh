@@ -6,11 +6,11 @@ import ResponseMessage from "./ResponseMessage/ResponseMessage";
 const ResponseArea = (props) => {
   return (
     <div className="response-area">
-      {props.responseMessage == null ? null : (
-        <ResponseMessage message={props.responseMessage} />
+      {props.resMessage == null ? null : (
+        <ResponseMessage message={props.resMessage} />
       )}
-      {props.responseBody == null ? null : (
-        <ResponseBody data={props.responseBody} />
+      {props.resBody == null ? null : (
+        <ResponseBody data={props.resBody} />
       )}
     </div>
   );

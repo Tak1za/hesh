@@ -3,10 +3,6 @@ import "./ResponseBody.scss";
 import ClipboardButton from "./ClipboardButton/ClipboardButton";
 
 const ResponseBody = (props) => {
-  // let data = {
-  //   test: "test test test",
-  //   test2: "test2 test2 test2",
-  // };
   const [showClipboard, setShowClipboard] = useState(false);
   return (
     <div
